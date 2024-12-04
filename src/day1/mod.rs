@@ -27,7 +27,7 @@ pub fn day1() {
             total_distance +=  (right_array[i] - left_array[i]).abs();
         }
 
-        println!("Part 1: {}", total_distance);
+        println!("Day 1: {}", total_distance);
     }
 }
 
