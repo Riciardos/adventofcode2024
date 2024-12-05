@@ -104,7 +104,7 @@ pub fn look_up(grid: &Vec<Point>, x_coord: usize, y_size: usize, y_coord: usize)
 }
 
 pub fn look_up_right(grid: &Vec<Point>, x_coord: usize, y_size: usize, y_coord: usize) -> bool {
-    if x_coord < 3 {
+    if x_coord < 3 || y_size - y_coord < 3{
         return false;
     }
 
@@ -160,6 +160,9 @@ pub fn look_up_left(grid: &Vec<Point>, x_coord: usize, y_size: usize, y_coord: u
 }
 
 pub fn look_down_right(grid: &Vec<Point>, x_coord: usize, y_size: usize, y_coord: usize) -> bool {
+    if y_size - x_coord < 3 || y_size - y_coord < 3{
+        return false
+    }
     let Some(point_x) = grid.get(x_coord * y_size + y_coord) else {
         return false;
     };
@@ -184,6 +187,9 @@ pub fn look_down_right(grid: &Vec<Point>, x_coord: usize, y_size: usize, y_coord
 }
 
 pub fn look_down_left(grid: &Vec<Point>, x_coord: usize, y_size: usize, y_coord: usize) -> bool {
+    if y_size - x_coord < 3 || y_coord < 3{
+        return false
+    }
     let Some(point_x) = grid.get(x_coord * y_size + y_coord) else {
         return false;
     };

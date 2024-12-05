@@ -79,18 +79,3 @@ pub fn day4() {
         println!("Day 4 Part 1: {:?}", total_found);
     }
 }
-
-// fn mark_found(mut grid: Vec<Point>, y_size: usize) {
-//     for i in 0..grid.len() / y_size {
-//         for j in 0..y_size {
-//
-//         }
-//     }
-//     grid.iter_mut().for_each(|point| {
-//         if point.found {
-//             let mut point = grid.get().unwrap();
-//             *point.found = true;
-//
-//         }
-//     })
-// }
