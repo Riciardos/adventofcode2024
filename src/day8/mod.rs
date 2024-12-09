@@ -47,19 +47,19 @@ pub fn day8() {
 
     mark_anti_nodes(&mut grid, &antenna_map);
 
-    for x in 0..x_size {
-        for y in 0..y_size {
-            print!(
-                "{}",
-                if grid.grid_points[x as usize * y_size as usize + y as usize].is_anti_node {
-                    '#'
-                } else {
-                    grid.grid_points[x as usize * y_size as usize + y as usize].char
-                }
-            )
-        }
-        println!()
-    }
+    // for x in 0..x_size {
+    //     for y in 0..y_size {
+    //         print!(
+    //             "{}",
+    //             if grid.grid_points[x as usize * y_size as usize + y as usize].is_anti_node {
+    //                 '#'
+    //             } else {
+    //                 grid.grid_points[x as usize * y_size as usize + y as usize].char
+    //             }
+    //         )
+    //     }
+    //     println!()
+    // }
 
     println!(
         "Day 8 part 2 {:?}",
