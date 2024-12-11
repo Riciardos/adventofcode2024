@@ -7,7 +7,7 @@ use crate::day5::{day5, day5_star2};
 use crate::day6::{day6, day6_part2};
 use crate::day7::day7;
 use crate::day8::day8;
-use crate::day9::day9;
+use crate::day9::{day9, day9_part2};
 
 mod day1;
 mod day2;
@@ -44,6 +44,7 @@ fn sequential() {
     day7(); // function changed in place to do part 2
     day8();
     day9();
+    day9_part2();
 
     let elapsed = now.elapsed();
     println!("Elapsed sequential: {:.2?}", elapsed);
